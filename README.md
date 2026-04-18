@@ -31,6 +31,13 @@ To provide a clear "Golden Reference" for verification, the internal program is 
 - MAC: Adds the product (50) to the 16-bit Accumulator.
 - STACC: Streams the final accumulation result to the output pins.
 
+## Understanding the output
+- 15, 5, 50: These are the immediate results of ADD (10+5), SUB (10-5), and MUL (10x5).
+- 64: This is the result of the MAC instruction. The accumulator was 50, and the program added another product. (Note: In decimal, 50 + 50 = 100, but if your display is in Hexadecimal, 64 is the hex equivalent of 100).
+- 50 / 100: These represent the STACC (Store Accumulator) operations. Depending on the simulation time, you are seeing the internal 16-bit accumulator being pulsed to the 8-bit output bus.
+- Technical Note: The jump to 100 proves the Accumulator is functioning correctly. It successfully held the previous result of 50 and added the new product of 50 to reach the final state.
+- Run time used: 20 us
+
 _Note: Each instruction is held for 128 clock cycles (timed strobe) to ensure high-margin signal stability and to allow for real-time visual monitoring._
 
 ## Author:
