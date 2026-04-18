@@ -33,4 +33,6 @@ To provide a clear "Golden Reference" for verification, the internal program is 
 _Note: Each instruction is held for 128 clock cycles (timed strobe) to ensure high-margin signal stability and to allow for real-time visual monitoring._
 
 ##Author: _Elaina Sara Sabu_
+
+
 _Designed as a standalone Silicon IP core focused on efficient arithmetic offloading and Harvard Architecture implementation._
