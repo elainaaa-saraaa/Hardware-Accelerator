@@ -21,7 +21,7 @@ By keeping these pathways separate, the chip doesn't get "clogged up." It can lo
 
 ## Functional Verification (Waveforms)
 The design has been fully verified through behavioral simulation to ensure mathematical accuracy and timing stability. Below are the execution waveforms captured during the testbench run.
-<img width="1884" height="436" alt="image" src="https://github.com/user-attachments/assets/76f497b3-9277-4c3c-b80d-d8414f69d5a2" />
+<img width="1872" height="536" alt="image" src="https://github.com/user-attachments/assets/a7ca6027-b5a1-4af5-9e0e-9bc831b9020f" />
 
 
 To provide a clear "Golden Reference" for verification, the internal program is hard-coded to process the values 10 (R1) and 5 (R2). Upon pulsing the reset pin, the accelerator executes the following sequence:
