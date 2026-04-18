@@ -9,7 +9,7 @@ By keeping these pathways separate, the chip doesn't get "clogged up." It can lo
 ## Main Components
 -Instruction Memory (The Map): A small, dedicated storage area that holds the list of commands the chip needs to follow.
 -Control Unit (The Brain): It reads the map, figures out what math needs to be done, and tells the other parts of the chip when to move.
--Datapath & ALU (The Calculator): This is where the heavy lifting happens. It handles addition, subtraction, and multiplication with a 16-bit Accumulator—a special register that keeps a running total without losing accuracy.
+-Datapath & ALU (The Calculator): This is where the heavy lifting happens. It handles addition, subtraction, and multiplication with a 16-bit Accumulator, a special register that keeps a running total without losing accuracy.
 -Register File (The Workbench): 8 high-speed "slots" (R0-R7) for current numbers. For this implementation, the core is pre-configured to load 10 and 5 as primary sample inputs upon reset to demonstrate mathematical accuracy.
 
 ## Modules Structure
