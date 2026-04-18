@@ -24,11 +24,11 @@ The design has been fully verified through behavioral simulation to ensure mathe
 <img width="1874" height="547" alt="image" src="https://github.com/user-attachments/assets/7e1462e6-b3a5-46cf-8575-ab6c2670d876" />
 
 To provide a clear "Golden Reference" for verification, the internal program is hard-coded to process the values 10 (R1) and 5 (R2). Upon pulsing the reset pin, the accelerator executes the following sequence:
--ADD: 10+5=15
--SUB: 10-5=5
--MUL: 10 x 5=50
--MAC: Adds the product (50) to the 16-bit Accumulator.
--STACC: Streams the final accumulation result to the output pins.
+- ADD: 10+5=15
+- SUB: 10-5=5
+- MUL: 10 x 5=50
+- MAC: Adds the product (50) to the 16-bit Accumulator.
+- STACC: Streams the final accumulation result to the output pins.
 
 _Note: Each instruction is held for 128 clock cycles (timed strobe) to ensure high-margin signal stability and to allow for real-time visual monitoring._
 
